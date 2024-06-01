@@ -1,0 +1,236 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+.active-link {
+    color:#F7CAAD /* Your desired color for the active link */;
+}
+body {
+    background-image: url('personality.png');
+    padding-top: 85px;
+    padding-right:60px;
+
+}
+
+nav {
+    float: left;
+    position: relative;
+    top: 0;
+    left: -40px;
+    background: transparent;
+}
+
+nav ul {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: #fff;
+}
+
+nav ul li {
+    position: relative;
+    width: 100px;
+    padding: 10px;
+    cursor: pointer;
+    background: #5127A9;
+    text-transform: uppercase;
+    transition: all .4s ease-out;
+}
+
+nav ul li>div {
+    display: inline-block;
+    padding: 25px 0;
+    background: transparent;
+}
+
+nav ul li:after {
+    position: absolute;
+    background: #FF6098;
+    color: #fff;
+    top: 0;
+    left: 100px;
+    width: 100px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 15px;
+    font-weight: 500;
+    height: 100%;
+    opacity: .5;
+    transform: perspective(500px) rotateY(90deg);
+    transform-origin: 0 100%;
+    transition: all .4s ease-out;
+}
+
+nav ul li:nth-child(1):after {
+    content: "Home";
+}
+
+nav ul li:nth-child(2):after {
+    content: "Profile";
+}
+
+nav ul li:nth-child(3):after {
+    content: "Traits";
+}
+
+nav ul li:nth-child(4):after {
+    content: "Hobbies";
+}
+
+nav ul li:nth-child(5):after {
+    content: "Favorite";
+}
+nav ul li:nth-child(6):after {
+    content: "Shedule";
+}
+nav ul li:hover {
+    transform: translateX(-100px);
+}
+
+nav ul li:hover:after {
+    opacity: 1;
+    transform: perspective(500px) rotateY(0deg) scale(1);
+}
+.trait-container {
+    float: right;
+    align-content: center;
+    /* Align the container to the right */
+    padding-right: 100px;
+    padding-bottom: 20px;
+    padding-left:20px;
+    width: 45%;
+    height: auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    /* Add padding to the right */
+}
+.progress-bar-container:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+/* Styling the h2 tag by giving color, 
+letter spacing, font-size etc.*/
+.progress-bar-container h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+.container h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    letter-spacing: 1px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.container p {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: bold;
+}
+/* Styling the border and box
+effect of the progress bar*/
+.progress-bar {
+    width: 600px;
+    height: 10px;
+    margin-top: 2px;
+    border: 1px solid #040404;
+    border-radius: 5px;
+}
+
+/* Stylingthe background color of each 
+animation and border radius */
+.percentage {
+    display: block;
+    height: 100%;
+    background-color: rgb(196, 74, 204);
+    border-radius: 5px;
+    animation: progress 1500ms ease-in 1;
+}
+
+/* Assigning width of each languages*/
+.Openness {
+    width: 70%;
+}
+
+.Extraversion {
+    width: 80%;
+}
+
+.Integrity
+{
+    width: 55%;
+}
+
+.Creativity {
+    width: 69%;
+}
+
+.Empathy {
+    width: 88%;
+}
+
+.Compassion {
+    width: 65%;
+}
+
+/* Animating the progress bar by 
+initially starting from 0*/
+@keyframes progress {
+    from {
+        width: 0;
+    }
+}
+
+/* Existing styles for nav and other elements */
+/* Add style for personality section */
+.pagination {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px; /* Adjust as needed */
+    left: 0;
+    right: 0;
+  }
+  
+  .page {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    text-align: center;
+    line-height: 20px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .page:hover {
+    background-color: #6E58A6;
+  }
+  
+  .page.active {
+    background-color: #6E58A6;
+    color: #fff;
+  }
+  

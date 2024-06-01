@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="shedule.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>3D Rotating Sidebar Hover Effect</title>
+</head>
+
+<body>
+    <nav style="   padding-top:30px;max-width: 400px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;">>
+        <ul>
+            <li>
+                <a href="home.html"></a>
+                <i class="fa fa-home" arial-hidden="true"></i>
+                <div class="icons">
+                </div>
+            </li>
+
+            <li><a href="Profile.html"></a>
+                <i class="fa fa-user" arial-hidden="true"></i>
+                <div class="icons"></div>
+            </li>
+
+            <li>
+                <a href="Traits.html"></a>
+                <i class="fa fa-puzzle-piece" arial-hidden="true"></i>
+                <div class="icons"></div>
+            </li>
+
+            <li>
+                <a href="hobby.html"></a>
+                <i class="fa fa-music" arial-hidden="true"></i>
+                <div class="icons"></div>
+            </li>
+
+            <li>
+                <a href="fav.html"></a>
+                <i class="fa fa-heart" arial-hidden="true"></i>
+                <div class="icons"></div>
+            </li>
+
+            <li>
+                <a href="shedule.html"></a>
+                <i class="fa fa-calendar" arial-hidden="true" style="color:#FF6098"></i>
+                <div class="icons"></div>
+            </li>
+
+
+        </ul>
+    </nav>
+    <h2 style="font-size:xx-large; font-weight: 1000; text-align: center;padding-top: 10px;">Mother's Day</h2>
+
+    <div style="padding-left: 200px;padding-top: 60px;">
+        <table >
+            <tr>
+              <th ;">Morning</th>
+              <td>
+                The day for a my mother commences early, as she rises to ensure the family is nourished with breakfast and packed lunches before they embark on their day. Additionally, amidst her responsibilities, she devoutly worships and seeks blessings from God.</td>
+            </tr>
+            <tr>
+              <th>Afternoon</th>
+              <td>In the afternoon, she prepares lunch for the family and completes her household chores. Afterward, to relax and unwind, she enjoys reading the newspaper or watching TV serials for entertainment. Additionally, she indulges in sewing as a hobby during this time.</td>
+            </tr>
+            <tr>
+              <th>Evening</th>
+              <td>In the evening, she heads to the market to gather daily essentials. Upon returning, she begins preparing dinner for the family. While cooking, she takes pleasure in watching her favorite TV serials, adding a touch of enjoyment to her evening routine.</td>
+            </tr></table>
+        </div>
+    
+
+    <div class="floating-button" onclick="redirectToProfile()">?</div>
+    <div class="popup" id="popup">
+        <span class="close-btn" onclick="hidePopup()">&times;</span>
+        <p>You should read about "Krishna's Mother"</p>
+    </div>
+    <div class="pagination">
+
+        <a href="Profile.html" class="page">1</a>
+        <a href="Traits.html" class="page">2</a>
+        <a href="hobby.html" class="page">3</a>
+        <a href="fav.html" class="page">4</a>
+        <a href="shedule.html" class="page">5</a>
+    </div>
+    <script defer src="script.js"></script>
+</body>
+
+</html>

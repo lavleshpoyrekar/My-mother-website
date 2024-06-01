@@ -1,0 +1,205 @@
+body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  .active-link {
+    color:#F7CAAD /* Your desired color for the active link */;
+  }
+  body {
+    background-image: url('favbg.png');
+    background-repeat: no-repeat;
+    padding-top: 85px;
+    padding-right:60px;
+  
+  }
+
+  
+  nav {
+    float: left;
+    position: relative;
+    top: 0;
+    left: -40px;
+    background: transparent;
+  }
+  
+  nav ul {
+    text-align: center;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  ul li .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: #fff;
+  }
+  
+  nav ul li {
+    position: relative;
+    width: 100px;
+    padding: 10px;
+    cursor: pointer;
+    background: #5127A9;
+    text-transform: uppercase;
+    transition: all .4s ease-out;
+  }
+  
+  nav ul li>div {
+    display: inline-block;
+    padding: 25px 0;
+    background: transparent;
+  }
+  
+  nav ul li:after {
+    position: absolute;
+    background: #FF6098;
+    color: #fff;
+    top: 0;
+    left: 100px;
+    width: 100px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 15px;
+    font-weight: 500;
+    height: 100%;
+    opacity: .5;
+    transform: perspective(500px) rotateY(90deg);
+    transform-origin: 0 100%;
+    transition: all .4s ease-out;
+  }
+  
+  nav ul li:nth-child(1):after {
+    content: "Home";
+  }
+  
+  nav ul li:nth-child(2):after {
+    content: "Profile";
+  }
+  
+  nav ul li:nth-child(3):after {
+    content: "Traits";
+  }
+  
+  nav ul li:nth-child(4):after {
+    content: "Hobbies";
+  }
+  
+  nav ul li:nth-child(5):after {
+    content: "Favorite";
+  }
+  nav ul li:nth-child(6):after {
+    content: "Shedule";
+  }
+  nav ul li:hover {
+    transform: translateX(-100px);
+  }
+  
+  nav ul li:hover:after {
+    opacity: 1;
+    transform: perspective(500px) rotateY(0deg) scale(1);
+  }
+  .cards-container {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px; 
+  }
+  
+  .card {
+    position: relative;
+    margin: 20px;
+    width: 325px;
+    height: 470px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.card .card-sticky {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: #FFD700; /* Sticky note color */
+    transform: rotate(-5deg); /* Tilted angle */
+    overflow: hidden;
+}
+
+.card .tilted-img {
+    width: 150%; /* Increase width to cover the entire sticky area */
+    height: auto;
+    position: absolute;
+    top: 50%; /* Position the image vertically centered */
+    left: 50%; /* Position the image horizontally centered */
+    transform: translate(-50%, -50%) rotate(5deg); /* Counter-rotate to correct image orientation */
+}
+
+.card .card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: #AA6F70; /* Set opacity to full */
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
+}
+ul {
+    list-style-type: disc; 
+    font-size: 18px;
+    font-weight: 200;
+    margin-bottom: 20px;
+    padding-left: 20px; 
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px; /* Adjust as needed */
+    left: 0;
+    right: 0;
+  }
+  
+  .page {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    text-align: center;
+    line-height: 20px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .page:hover {
+    background-color: #6E58A6;
+  }
+  
+  .page.active {
+    background-color: #6E58A6;
+    color: #fff;
+  }
+  

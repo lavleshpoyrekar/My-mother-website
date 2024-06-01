@@ -1,0 +1,203 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+   
+    padding-top: 80px;
+    padding-right:60px;
+    background-image: url('shedulebg.png');
+
+
+}
+
+nav {
+    float: left;
+    position: relative;
+    top: 0;
+    left: -40px;
+    background: transparent;
+}
+
+nav ul {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: #fff;
+}
+
+nav ul li {
+    position: relative;
+    width: 100px;
+    padding: 10px;
+    cursor: pointer;
+    background: #5127A9;
+    text-transform: uppercase;
+    transition: all .4s ease-out;
+}
+
+nav ul li>div {
+    display: inline-block;
+    padding: 25px 0;
+    background: transparent;
+}
+
+nav ul li:after {
+    position: absolute;
+    background: #FF6098;
+    color: #fff;
+    top: 0;
+    left: 100px;
+    width: 100px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 15px;
+    font-weight: 500;
+    height: 100%;
+    opacity: .5;
+    transform: perspective(500px) rotateY(90deg);
+    transform-origin: 0 100%;
+    transition: all .4s ease-out;
+}
+
+nav ul li:nth-child(1):after {
+    content: "Home";
+}
+
+nav ul li:nth-child(2):after {
+    content: "Profile";
+}
+
+nav ul li:nth-child(3):after {
+    content: "Traits";
+}
+
+nav ul li:nth-child(4):after {
+    content: "Hobbies";
+}
+
+nav ul li:nth-child(5):after {
+    content: "Favorite";
+}
+nav ul li:nth-child(6):after {
+    content: "Shedule";
+}
+nav ul li:hover {
+    transform: translateX(-100px);
+}
+
+nav ul li:hover:after {
+    opacity: 1;
+    transform: perspective(500px) rotateY(0deg) scale(1);
+}
+
+.floating-button {
+    width: 60px;
+    height: 60px;
+    background-color: #5127A9;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  
+  .popup {
+    display: none;
+    position: fixed;
+    bottom: 90px;
+    right: 30px;
+    background-color: #FF6098;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .close-btn {
+    float: right;
+    cursor: pointer;
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px; /* Adjust as needed */
+    left: 0;
+    right: 0;
+  }
+  
+  .page {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    text-align: center;
+    line-height: 20px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .page:hover {
+    background-color: #6E58A6;
+  }
+  
+  .page.active {
+    background-color: #6E58A6;
+    color: #fff;
+  }
+
+  
+  
+table {
+    width: 60%;
+
+    border: 2px solid #333;
+}
+th, td {
+    border: 1px solid #333;
+    padding: 12px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+
+}
+th {
+    background-color: #F79ACD;
+    color: #333;
+}
+td {
+    background-color: #fff;
+    color: #333;
+}
+th:first-child, td:first-child {
+    border-left: none;
+}
+th:last-child, td:last-child {
+    border-right: none;
+}
+tr:last-child th, tr:last-child td {
+    border-bottom: none;
+}
